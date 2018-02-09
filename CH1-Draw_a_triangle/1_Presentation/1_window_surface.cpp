@@ -203,6 +203,10 @@ private:
                 break;
             }
         }
+
+        if (mPhysicalDevice == VK_NULL_HANDLE) {
+            throw std::runtime_error("Failed to find a suitable GPU!");
+        }
     }
 
     bool isDeviceSuitable(VkPhysicalDevice device) {
@@ -279,7 +283,7 @@ private:
         }
 
         if (vkCreateDevice(mPhysicalDevice, &createInfo, nullptr, &mDevice) != VK_SUCCESS) {
-            throw std::runtime_error("failed to create logical device!");
+            throw std::runtime_error("Failed to create logical device!");
         }
 
         vkGetDeviceQueue(mDevice, indices.graphicsFamily, 0, &mGraphicsQueue);
