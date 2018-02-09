@@ -1,0 +1,1 @@
+add_executable(1_shader_modules 1_shader_modules.cpp)

@@ -1,2 +1,3 @@
 add_subdirectory(0_Setup)
 add_subdirectory(1_Presentation)
+add_subdirectory(2_Graphics_pipline_basics)
