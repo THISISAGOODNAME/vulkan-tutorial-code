@@ -1,1 +1,7 @@
 add_executable(1_shader_modules 1_shader_modules.cpp)
+
+add_executable(2_fixed_functions 2_fixed_functions.cpp)
+
+add_executable(3_render_passes 3_render_passes.cpp)
+
+add_executable(4_graphics_pipeline_complete 4_graphics_pipeline_complete.cpp)
