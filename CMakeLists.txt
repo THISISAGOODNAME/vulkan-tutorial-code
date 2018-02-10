@@ -18,3 +18,4 @@ include_directories(3rd_party/glm)
 include_directories(3rd_party/vulkan-header)
 
 add_subdirectory(CH1-Draw_a_triangle)
+add_subdirectory(CH2-Vertex_buffer)
