@@ -1,0 +1,3 @@
+add_executable(1_descriptor_layout_and_buffer 1_descriptor_layout_and_buffer.cpp)
+
+add_executable(2_descriptor_pool_and_sets 2_descriptor_pool_and_sets.cpp)

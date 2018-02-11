@@ -1,5 +1,5 @@
 //
-// Created by AICDG on 2018/2/10.
+// Created by AICDG on 2018/2/11.
 //
 
 
@@ -9,6 +9,7 @@
 #define GLM_FORCE_RADIANS
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
 #include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
 
 #include <iostream>
 #include <stdexcept>
@@ -19,6 +20,7 @@
 #include <fstream>
 #include <limits>
 #include <array>
+#include <chrono>
 
 const int WIDTH = 800;
 const int HEIGHT = 600;
@@ -109,6 +111,12 @@ const std::vector<uint16_t> indices = {
         0, 1, 2, 2, 3, 0
 };
 
+struct UniformBufferObject {
+    glm::mat4 model;
+    glm::mat4 view;
+    glm::mat4 proj;
+};
+
 class HelloTriangleApplication {
 public:
     void run() {
@@ -141,6 +149,8 @@ private:
         createSwapChain();
         createImageViews();
 
+        createDescriptorSetLayout();
+
         createGraphicsPipeline();
         createRenderPass();
 
@@ -151,12 +161,15 @@ private:
 
         createVertexBuffer();
         createIndexBuffer();
+
+        createUniformBuffer();
     }
 
     void mainLoop() {
         while (!glfwWindowShouldClose(mWindow)) {
             glfwPollEvents();
             drawFrame();
+            updateUniformBuffer();
         }
 
         vkDeviceWaitIdle(mDevice);
@@ -182,6 +195,10 @@ private:
 
     void cleanup() {
         cleanupSwapChain();
+
+        vkDestroyDescriptorSetLayout(mDevice, mDescriptorSetLayout, nullptr);
+        vkDestroyBuffer(mDevice, mUniformBuffer, nullptr);
+        vkFreeMemory(mDevice, mUniformBufferMemory, nullptr);
 
         vkDestroyBuffer(mDevice, mIndexBuffer, nullptr);
         vkFreeMemory(mDevice, mIndexBufferMemory, nullptr);
@@ -710,8 +727,8 @@ private:
         // Pipeline layout
         VkPipelineLayoutCreateInfo pipelineLayoutCreateInfo = {};
         pipelineLayoutCreateInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO;
-        pipelineLayoutCreateInfo.setLayoutCount = 0; // Optional
-        pipelineLayoutCreateInfo.pSetLayouts = nullptr; // Optional
+        pipelineLayoutCreateInfo.setLayoutCount = 1;
+        pipelineLayoutCreateInfo.pSetLayouts = &mDescriptorSetLayout;
         pipelineLayoutCreateInfo.pushConstantRangeCount = 0; // Optional
         pipelineLayoutCreateInfo.pPushConstantRanges = 0; // Optional
 
@@ -1088,6 +1105,46 @@ private:
         throw std::runtime_error("failed to find suitable memory type!");
     }
 
+    void createDescriptorSetLayout() {
+        VkDescriptorSetLayoutBinding uboLayoutBinding = {};
+        uboLayoutBinding.binding = 0;
+        uboLayoutBinding.descriptorType = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER;
+        uboLayoutBinding.descriptorCount = 1;
+        uboLayoutBinding.stageFlags = VK_SHADER_STAGE_VERTEX_BIT;
+        uboLayoutBinding.pImmutableSamplers = nullptr; // Optional
+
+        VkDescriptorSetLayoutCreateInfo layoutInfo = {};
+        layoutInfo.sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_CREATE_INFO;
+        layoutInfo.bindingCount = 1;
+        layoutInfo.pBindings = &uboLayoutBinding;
+
+        if (vkCreateDescriptorSetLayout(mDevice, &layoutInfo, nullptr, &mDescriptorSetLayout) != VK_SUCCESS) {
+            throw std::runtime_error("Failed to create descriptor set layout!");
+        }
+    }
+
+    void createUniformBuffer() {
+        VkDeviceSize bufferSize = sizeof(UniformBufferObject);
+        createBuffer(bufferSize, VK_BUFFER_USAGE_UNIFORM_BUFFER_BIT, VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT | VK_MEMORY_PROPERTY_HOST_COHERENT_BIT, mUniformBuffer, mUniformBufferMemory);
+    }
+
+    void updateUniformBuffer() {
+        static auto startTime = std::chrono::high_resolution_clock::now();
+
+        auto currentTime = std::chrono::high_resolution_clock::now();
+        float time = std::chrono::duration<float, std::chrono::seconds::period>(currentTime - startTime).count();
+
+        UniformBufferObject ubo = {};
+        ubo.model = glm::rotate(glm::mat4(1.0f), time * glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+        ubo.view = glm::lookAt(glm::vec3(2.0f, 2.0f, 2.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+        ubo.proj = glm::perspective(glm::radians(45.0f), mSwapChainExtent.width / (float) mSwapChainExtent.height, 0.1f, 10.0f);
+
+        void* data;
+        vkMapMemory(mDevice, mUniformBufferMemory, 0, sizeof(ubo), 0, &data);
+            memcpy(data, &ubo, sizeof(ubo));
+        vkUnmapMemory(mDevice, mUniformBufferMemory);
+    }
+
     GLFWwindow* mWindow;
 
     VkInstance mInstance;
@@ -1106,6 +1163,7 @@ private:
     VkExtent2D mSwapChainExtent;
     std::vector<VkImageView> mSwapChainImageViews;
 
+    VkDescriptorSetLayout mDescriptorSetLayout;
     VkPipelineLayout mPipelineLayout;
     VkRenderPass mRenderPass;
     VkPipeline mGraphicsPipeline;
@@ -1123,6 +1181,9 @@ private:
 
     VkBuffer mIndexBuffer;
     VkDeviceMemory mIndexBufferMemory;
+
+    VkBuffer mUniformBuffer;
+    VkDeviceMemory mUniformBufferMemory;
 };
 
 int main() {
