@@ -8,14 +8,14 @@ platform: all
 version: all
 output: web
 destination: ../doc_outputs/mydoc/designers
-topnav_title: HTML5动画基础
-homepage_title: 动画基础
-site_title: HTML5动画基础
+topnav_title: vulkan基础教程
+homepage_title: vulkan基础教程
+site_title: vulkan基础教程
 project_folder: mydoc
 company_name: AICDG
 footer_image_location: 
 github_editme_path: 
-disqus_shortname: aicdghtml5anime
+disqus_shortname: vulkan-basic
 # variables
 
 
