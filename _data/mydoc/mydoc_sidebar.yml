@@ -1,0 +1,183 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+# Sidebar
+entries:
+- title: Sidebar
+  subcategories:
+  - title:
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: pdf
+    type: frontmatter
+    items:
+    - title:
+      url: /titlepage.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: pdf
+      type: frontmatter
+
+  - title: 动画和JavaScript基础
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+    - title: 动画基础
+      url: /mydoc/home.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: HTML5简介
+      url: /mydoc/mydoc_2.2_html5_overviews.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: 用代码实现动画
+      url: /mydoc/mydoc_2.3_animation_cycle.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+
+
+  - title: 动画中的三角数学
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+    - title: 旋转
+      url: /mydoc/mydoc_3.3_rotate.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+      thirdlevel:
+      - title: 波
+        audience: writers, designers
+        platform: all
+        version: all
+        product: all
+        output: web
+        thirdlevelitems:
+        - title: 平滑的上下运动
+          url: /mydoc/mydoc_3.4.1.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
+
+        - title: 添加垂直线性运动
+          url: /mydoc/mydoc_3.4.2.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
+
+        - title: 脉冲运动
+          url: /mydoc/mydoc_3.4.3.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
+
+        - title: 使用两个角产生波
+          url: /mydoc/mydoc_3.4.4.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
+
+        - title: 使用绘图API产生的波
+          url: /mydoc/mydoc_3.4.5.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
+
+
+    - title: 圆与椭圆
+      url: /mydoc/mydoc_3.5.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: 两点间的距离
+      url: /mydoc/mydoc_3.6.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: 本节重要公式
+      url: /mydoc/mydoc_3.7.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+
+  - title: 三维基础
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+    - title: 第三维度与透视图
+      url: /mydoc/mydoc_15.1.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: 坐标旋转
+      url: /mydoc/mydoc_15.7.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: 本节中重要公式
+      url: /mydoc/mydoc_15.9.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+

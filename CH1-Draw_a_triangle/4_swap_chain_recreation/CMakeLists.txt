@@ -1,1 +1,0 @@
-add_executable(1_swap_chain_recreation 1_swap_chain_recreation.cpp)

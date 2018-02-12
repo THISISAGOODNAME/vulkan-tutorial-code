@@ -1,5 +1,3 @@
-# this is simply copied over from config/config_designers.yml
-
 # project definitions
 project: mydoc_designers
 audience: designers
@@ -8,20 +6,20 @@ platform: all
 version: all
 output: web
 destination: ../doc_outputs/mydoc/designers
-topnav_title: HTML5动画基础
-homepage_title: 动画基础
-site_title: HTML5动画基础
+topnav_title: Jekyll Documentation Theme
+homepage_title: Jekyll doc theme for designers
+site_title: Jekyll theme for designers
 project_folder: mydoc
-company_name: AICDG
-footer_image_location: 
-github_editme_path: 
-disqus_shortname: aicdghtml5anime
+company_name: Your company
+footer_image_location: ../../common_images/company_logo.png
+github_editme_path: tomjohnson1492/documentation-theme-jekyll/edit/reviews
+disqus_shortname: idrbwjekyll
 # variables
 
 
-sidebar_tagline: 目录
-sidebar_version: Version 0.01
-theme_file: theme-green.css
+sidebar_tagline: Designers
+sidebar_version: Version 4.0
+theme_file: theme-blue.css
 pdf_file_name: mydoc_designers_pdf.pdf
 
 # the algolia entries here are experimental only.
@@ -41,7 +39,7 @@ exclude:
 
 # same for all
 host: 127.0.0.1
-feedback_email: yang_yj19931231@163.com
+feedback_email: tomjohnson1492@gmail.com
 
 # these settings should work, but they don't seem to apply the right highlighting
 
@@ -53,7 +51,7 @@ feedback_email: yang_yj19931231@163.com
 #  hard_wrap: false
 #  syntax_highlighter: rouge
 
-highlighter: rouge
+highlighter: pygments
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "tables", "with_toc_data"]
