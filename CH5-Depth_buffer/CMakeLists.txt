@@ -1,0 +1,1 @@
+add_executable(depth_buffering depth_buffering.cpp)
