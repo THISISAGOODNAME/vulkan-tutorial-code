@@ -197,29 +197,29 @@ entries:
           product: all
           output: web        
 
-    - title: 圆与椭圆
-      url: /mydoc/mydoc_3.5.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web, pdf
+      - title: 圆与椭圆
+        url: /mydoc/mydoc_3.5.html
+        audience: writers, designers
+        platform: all
+        product: all
+        version: all
+        output: web, pdf
 
-    - title: 两点间的距离
-      url: /mydoc/mydoc_3.6.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web, pdf
+    # - title: 两点间的距离
+    #   url: /mydoc/mydoc_3.6.html
+    #   audience: writers, designers
+    #   platform: all
+    #   product: all
+    #   version: all
+    #   output: web, pdf
 
-    - title: 本节重要公式
-      url: /mydoc/mydoc_3.7.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web, pdf
+    # - title: 本节重要公式
+    #   url: /mydoc/mydoc_3.7.html
+    #   audience: writers, designers
+    #   platform: all
+    #   product: all
+    #   version: all
+    #   output: web, pdf
 
 
   - title: 三维基础
