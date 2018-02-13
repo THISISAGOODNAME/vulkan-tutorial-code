@@ -69,7 +69,7 @@ entries:
     items:
 
     - title: 编码规范简介
-      url: /mydoc/mydoc.html
+      url: /mydoc/1_code_style.html
       audience: writers, designers
       platform: all
       product: all
