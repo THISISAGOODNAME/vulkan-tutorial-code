@@ -29,31 +29,31 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: 动画和JavaScript基础
+  - title: 简介
     audience: writers, designers
     platform: all
     product: all
     version: all
     output: web, pdf
     items:
-    - title: 动画基础
-      url: /mydoc/home.html
+    - title: Introduction
+      url: /mydoc/0_1_Introduction.html
       audience: writers, designers
       platform: all
       product: all
       version: all
       output: web, pdf
 
-    - title: HTML5简介
-      url: /mydoc/mydoc_2.2_html5_overviews.html
+    - title: Overview
+      url: /mydoc/0_2_Overview.html
       audience: writers, designers
       platform: all
       product: all
       version: all
       output: web, pdf
 
-    - title: 用代码实现动画
-      url: /mydoc/mydoc_2.3_animation_cycle.html
+    - title: 开发环境搭建
+      url: /mydoc/0_3_Development_environment.html
       audience: writers, designers
       platform: all
       product: all
@@ -61,69 +61,77 @@ entries:
       output: web
 
 
-  - title: 动画中的三角数学
+  - title: 画三角形
     audience: writers, designers
     platform: all
     product: all
     version: all
     output: web, pdf
     items:
-    - title: 旋转
-      url: /mydoc/mydoc_3.3_rotate.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web, pdf
 
-      thirdlevel:
-      - title: 波
+    - thirdlevel:
+      - title: Setup
         audience: writers, designers
         platform: all
         version: all
         product: all
         output: web
         thirdlevelitems:
-        - title: 平滑的上下运动
-          url: /mydoc/mydoc_3.4.1.html
+        - title: Base code
+          url: /mydoc/mydoc.html
           audience: writers, designers
           platform: all
           version: all
           product: all
           output: web
 
-        - title: 添加垂直线性运动
-          url: /mydoc/mydoc_3.4.2.html
+        - title: Instance
+          url: /mydoc/mydoc.html
           audience: writers, designers
           platform: all
           version: all
           product: all
           output: web
 
-        - title: 脉冲运动
-          url: /mydoc/mydoc_3.4.3.html
+        - title: Validation layers
+          url: /mydoc/mydoc.html
           audience: writers, designers
           platform: all
           version: all
           product: all
           output: web
 
-        - title: 使用两个角产生波
-          url: /mydoc/mydoc_3.4.4.html
+        - title: Physical devices and queue families
+          url: /mydoc/mydoc.html
           audience: writers, designers
           platform: all
           version: all
           product: all
           output: web
 
-        - title: 使用绘图API产生的波
-          url: /mydoc/mydoc_3.4.5.html
+        - title: Base code
+          url: /mydoc/mydoc.html
           audience: writers, designers
           platform: all
           version: all
           product: all
           output: web
 
+    - thirdlevel:
+      - title: Presentation
+        audience: writers, designers
+        platform: all
+        version: all
+        product: all
+        output: web
+        thirdlevelitems:
+        - title: Window surface
+          url: /mydoc/mydoc.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
 
     - title: 圆与椭圆
       url: /mydoc/mydoc_3.5.html
