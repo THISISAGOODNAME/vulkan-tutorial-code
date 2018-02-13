@@ -60,7 +60,6 @@ entries:
       version: all
       output: web
 
-
   - title: 画三角形
     audience: writers, designers
     platform: all
@@ -69,7 +68,7 @@ entries:
     output: web, pdf
     items:
 
-    - title: 我要做些什么
+    - title: 编码规范简介
       url: /mydoc/mydoc.html
       audience: writers, designers
       platform: all
@@ -203,15 +202,38 @@ entries:
           product: all
           output: web        
 
-      - title: 圆与椭圆
-        url: /mydoc/mydoc_3.5.html
+      - title: Drawing
         audience: writers, designers
         platform: all
-        product: all
         version: all
-        output: web, pdf
+        product: all
+        output: web
+        thirdlevelitems:
+        - title: Framebuffers
+          url: /mydoc/mydoc.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
 
-    - title: 两点间的距离
+        - title: Command buffers
+          url: /mydoc/mydoc.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
+
+        - title: Rendering and presentation
+          url: /mydoc/mydoc.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
+
+    - title: Swap chain recreation
       url: /mydoc/mydoc_3.6.html
       audience: writers, designers
       platform: all
@@ -219,43 +241,125 @@ entries:
       version: all
       output: web, pdf
 
-    - title: 本节重要公式
-      url: /mydoc/mydoc_3.7.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web, pdf
-
-
-  - title: 三维基础
+  - title: 顶点缓冲(Vertex buffer)
     audience: writers, designers
     platform: all
     product: all
     version: all
     output: web, pdf
     items:
-    - title: 第三维度与透视图
-      url: /mydoc/mydoc_15.1.html
+    - title: Vertex input description
+      url: /mydoc/mydoc.html
       audience: writers, designers
       platform: all
       product: all
       version: all
       output: web, pdf
 
-    - title: 坐标旋转
-      url: /mydoc/mydoc_15.7.html
+    - title: Vertex buffer cretion
+      url: /mydoc/mydoc.html
       audience: writers, designers
       platform: all
       product: all
       version: all
       output: web, pdf
 
-    - title: 本节中重要公式
-      url: /mydoc/mydoc_15.9.html
+    - title: Staging buffer
+      url: /mydoc/mydoc.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+
+    - title: Staging buffer
+      url: /mydoc/mydoc.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web  
+
+  - title: 一致缓冲(Uniform buffer)
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+    - title: Descriptor layout and buffer
+      url: /mydoc/mydoc.html
       audience: writers, designers
       platform: all
       product: all
       version: all
       output: web, pdf
 
+    - title: Descriptor pool and sets
+      url: /mydoc/mydoc.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+  - title: 纹理映射(Texture mapping)
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+    - title: images
+      url: /mydoc/mydoc.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Image view and samplers
+      url: /mydoc/mydoc.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Combined image sampler
+      url: /mydoc/mydoc.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf  
+
+  - title: 深度缓冲(Depth buffer)
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+    - title: Depth buffering
+      url: /mydoc/mydoc.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+  - title: 加载模型
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+    - title: Loading models
+      url: /mydoc/mydoc.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
