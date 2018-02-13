@@ -69,7 +69,7 @@ entries:
     output: web, pdf
     items:
 
-    - thirdlevel:
+    thirdlevel:
       - title: Setup
         audience: writers, designers
         platform: all
@@ -117,7 +117,7 @@ entries:
           product: all
           output: web
 
-    - thirdlevel:
+    thirdlevel:
       - title: Presentation
         audience: writers, designers
         platform: all
@@ -132,6 +132,22 @@ entries:
           version: all
           product: all
           output: web
+
+        - title: Swap chain
+          url: /mydoc/mydoc.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
+
+        - title: Image views
+          url: /mydoc/mydoc.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web    
 
     - title: 圆与椭圆
       url: /mydoc/mydoc_3.5.html
