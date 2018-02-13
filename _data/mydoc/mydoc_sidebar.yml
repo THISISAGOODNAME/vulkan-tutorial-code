@@ -165,7 +165,7 @@ entries:
           product: all
           output: web
 
-        - title: 图形管线简介
+        - title: Shader modules
           url: /mydoc/mydoc.html
           audience: writers, designers
           platform: all
@@ -173,7 +173,7 @@ entries:
           product: all
           output: web
 
-        - title: 图形管线简介
+        - title: Fixed functions
           url: /mydoc/mydoc.html
           audience: writers, designers
           platform: all
@@ -181,7 +181,7 @@ entries:
           product: all
           output: web
 
-        - title: 图形管线简介
+        - title: Render passes
           url: /mydoc/mydoc.html
           audience: writers, designers
           platform: all
@@ -189,7 +189,7 @@ entries:
           product: all
           output: web
 
-        - title: 图形管线简介
+        - title: 小结
           url: /mydoc/mydoc.html
           audience: writers, designers
           platform: all
