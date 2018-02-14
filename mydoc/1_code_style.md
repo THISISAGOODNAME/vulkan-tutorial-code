@@ -39,7 +39,7 @@ summary: "本教程使用的编码规范"
 
 - 代码块左花括号`{`写在新行，不写在行尾
 - 在switch语句中不使用`{}`
-- 甚用`auto`关键字
+- 慎用`auto`关键字
 - 循环，优先使用Range Based For
 - 为了减少误导，在本教程中，不会使用C++ Lambda表达式
 - 优先使用STL而不是自己的算法，少用指针
@@ -53,7 +53,7 @@ summary: "本教程使用的编码规范"
 
 {{site.data.alerts.tip}}给初学者一个建议，根据情况选取最合适的容器，不要一味的使用vector和map{{site.data.alerts.end}}
 
-{{site.data.alerts.note}}本教程不使用智能指针，所有对象均手工管理内存，实际开发中可以使用智能指针降低内存管理的负担，但是vulkan对象生命周期比较特殊，释放顺序出错会直接导致程序崩溃，建议vulkan部分暂时手工管理，也可以参考[Vulkan Cookbook](https://www.packtpub.com/game-development/vulkan-cookbook)实现的VulkanDetroyer来更智能的释放vulkan对象{{site.data.alerts.end}}
+{{site.data.alerts.note}}本教程不使用智能指针，所有对象均手工管理内存，实际开发中可以使用智能指针降低内存管理的负担，但是vulkan对象生命周期比较特殊，释放顺序出错会直接导致程序崩溃，建议vulkan部分暂时手工管理，也可以参考[Vulkan Cookbook](https://www.packtpub.com/game-development/vulkan-cookbook)实现的VulkanDestoryer来更智能的释放vulkan对象{{site.data.alerts.end}}
 
 ## shader规范
 
