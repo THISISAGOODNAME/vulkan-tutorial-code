@@ -37,7 +37,7 @@ entries:
     output: web, pdf
     items:
     - title: Introduction
-      url: /mydoc/0_1_Introduction.html
+      url: /mydoc/home.html
       audience: writers, designers
       platform: all
       product: all
