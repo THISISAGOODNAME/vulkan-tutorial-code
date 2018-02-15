@@ -69,7 +69,7 @@ entries:
     items:
 
     - title: 编码规范简介
-      url: /mydoc/1_code_style.html
+      url: /mydoc/1_0_code_style.html
       audience: writers, designers
       platform: all
       product: all
@@ -85,7 +85,7 @@ entries:
         output: web
         thirdlevelitems:
         - title: Base code
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_1_1_base_code.html
           audience: writers, designers
           platform: all
           version: all
@@ -93,7 +93,7 @@ entries:
           output: web
 
         - title: Instance
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_1_2_Instance.html
           audience: writers, designers
           platform: all
           version: all
@@ -101,7 +101,7 @@ entries:
           output: web
 
         - title: Validation layers
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_1_3_validation_layers.html
           audience: writers, designers
           platform: all
           version: all
@@ -109,7 +109,7 @@ entries:
           output: web
 
         - title: Physical devices and queue families
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_1_4_physical_devices.html
           audience: writers, designers
           platform: all
           version: all
@@ -117,7 +117,7 @@ entries:
           output: web
 
         - title: Logical device and queues
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_1_5_logical_device.html
           audience: writers, designers
           platform: all
           version: all
@@ -132,7 +132,7 @@ entries:
         output: web
         thirdlevelitems:
         - title: Window surface
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_2_1_window_surface.html
           audience: writers, designers
           platform: all
           version: all
@@ -140,7 +140,7 @@ entries:
           output: web
 
         - title: Swap chain
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_2_2_swap_chain.html
           audience: writers, designers
           platform: all
           version: all
@@ -148,7 +148,7 @@ entries:
           output: web
 
         - title: Image views
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_2_3_image_views.html
           audience: writers, designers
           platform: all
           version: all
@@ -163,7 +163,7 @@ entries:
         output: web
         thirdlevelitems:
         - title: 图形管线简介
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_3_1_Graphics_pipeline.html
           audience: writers, designers
           platform: all
           version: all
@@ -171,7 +171,7 @@ entries:
           output: web
 
         - title: Shader modules
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_3_2_shader_modules.html
           audience: writers, designers
           platform: all
           version: all
@@ -179,7 +179,7 @@ entries:
           output: web
 
         - title: Fixed functions
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_3_3_fixed_functions.html
           audience: writers, designers
           platform: all
           version: all
@@ -187,7 +187,7 @@ entries:
           output: web
 
         - title: Render passes
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_3_4_render_passes.html
           audience: writers, designers
           platform: all
           version: all
@@ -195,7 +195,7 @@ entries:
           output: web
 
         - title: 小结
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_3_5_conclusion.html
           audience: writers, designers
           platform: all
           version: all
@@ -210,7 +210,7 @@ entries:
         output: web
         thirdlevelitems:
         - title: Framebuffers
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_4_1_framebuffers.html
           audience: writers, designers
           platform: all
           version: all
@@ -218,7 +218,7 @@ entries:
           output: web
 
         - title: Command buffers
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_4_2_command_buffers.html
           audience: writers, designers
           platform: all
           version: all
@@ -226,7 +226,7 @@ entries:
           output: web
 
         - title: Rendering and presentation
-          url: /mydoc/mydoc.html
+          url: /mydoc/1_4_3_rendering_and_presentation.html
           audience: writers, designers
           platform: all
           version: all
@@ -234,7 +234,7 @@ entries:
           output: web
 
     - title: Swap chain recreation
-      url: /mydoc/mydoc_3.6.html
+      url: /mydoc/1_5_swap_chain_recreation.html
       audience: writers, designers
       platform: all
       product: all
@@ -249,7 +249,7 @@ entries:
     output: web, pdf
     items:
     - title: Vertex input description
-      url: /mydoc/mydoc.html
+      url: /mydoc/2_1_vertex_input_description.html
       audience: writers, designers
       platform: all
       product: all
@@ -257,7 +257,7 @@ entries:
       output: web, pdf
 
     - title: Vertex buffer cretion
-      url: /mydoc/mydoc.html
+      url: /mydoc/2_2_vertex_buffer_cretion.html
       audience: writers, designers
       platform: all
       product: all
@@ -265,20 +265,20 @@ entries:
       output: web, pdf
 
     - title: Staging buffer
-      url: /mydoc/mydoc.html
+      url: /mydoc/2_3_staging_buffer.html
       audience: writers, designers
       platform: all
       product: all
       version: all
-      output: web
+      output: web, pdf
 
-    - title: Staging buffer
-      url: /mydoc/mydoc.html
+    - title: Index buffer
+      url: /mydoc/2_4_index_buffer.html
       audience: writers, designers
       platform: all
       product: all
       version: all
-      output: web  
+      output: web, pdf 
 
   - title: 一致缓冲(Uniform buffer)
     audience: writers, designers
@@ -288,7 +288,7 @@ entries:
     output: web, pdf
     items:
     - title: Descriptor layout and buffer
-      url: /mydoc/mydoc.html
+      url: /mydoc/3_1_descriptor_layout_and_buffer.html
       audience: writers, designers
       platform: all
       product: all
@@ -296,7 +296,7 @@ entries:
       output: web, pdf
 
     - title: Descriptor pool and sets
-      url: /mydoc/mydoc.html
+      url: /mydoc/3_2_descriptor_pool_and_sets.html
       audience: writers, designers
       platform: all
       product: all
@@ -310,8 +310,8 @@ entries:
     version: all
     output: web, pdf
     items:
-    - title: images
-      url: /mydoc/mydoc.html
+    - title: Images
+      url: /mydoc/4_1_images.html
       audience: writers, designers
       platform: all
       product: all
@@ -319,7 +319,7 @@ entries:
       output: web, pdf
 
     - title: Image view and samplers
-      url: /mydoc/mydoc.html
+      url: /mydoc/4_2_image_view_and_samplers.html
       audience: writers, designers
       platform: all
       product: all
@@ -327,7 +327,7 @@ entries:
       output: web, pdf
 
     - title: Combined image sampler
-      url: /mydoc/mydoc.html
+      url: /mydoc/4_3_combined_image_sampler.html
       audience: writers, designers
       platform: all
       product: all
@@ -342,7 +342,7 @@ entries:
     output: web, pdf
     items:
     - title: Depth buffering
-      url: /mydoc/mydoc.html
+      url: /mydoc/5_depth_buffering.html
       audience: writers, designers
       platform: all
       product: all
@@ -357,7 +357,7 @@ entries:
     output: web, pdf
     items:
     - title: Loading models
-      url: /mydoc/mydoc.html
+      url: /mydoc/5_loading_models.html
       audience: writers, designers
       platform: all
       product: all
