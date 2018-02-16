@@ -1,1 +1,2 @@
 add_executable(1_swap_chain_recreation 1_swap_chain_recreation.cpp)
+target_link_libraries(1_swap_chain_recreation ${LIBS})

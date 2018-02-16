@@ -5,3 +5,4 @@ add_subdirectory(3_Drawing)
 add_subdirectory(4_swap_chain_recreation)
 
 add_executable(hello_triangle hello_triangle.cpp)
+target_link_libraries(hello_triangle ${LIBS})
