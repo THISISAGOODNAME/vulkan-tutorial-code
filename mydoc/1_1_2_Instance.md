@@ -111,9 +111,9 @@ for (const auto& extension : extensions) {
 
 ```c++
 void cleanup() {
-    vkDestroyInstance(instance, nullptr);
+    vkDestroyInstance(mInstance, nullptr);
 
-    glfwDestroyWindow(window);
+    glfwDestroyWindow(mWindow);
 
     glfwTerminate();
 }
