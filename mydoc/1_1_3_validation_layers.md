@@ -62,7 +62,7 @@ const std::vector<const char*> validationLayers = {
 #endif
 ```
 
-{{site.data.alerts.warning}}如果使用mac开发，使用MoltenVK SDK，则不能使用LunarG SDK的验证层。MoltenVK有自己的验证层，官方blog也表示未来可能会引入LunarG的验证层支持，但是现在，如果在mac上开发，请关闭验证层。{{site.data.alerts.warning}}
+{{site.data.alerts.warning}}如果使用mac开发，使用MoltenVK SDK，则不能使用LunarG SDK的验证层。MoltenVK有自己的验证层，官方blog也表示未来可能会引入LunarG的验证层支持，但是现在，如果在mac上开发，请关闭验证层。{{site.data.alerts.end}}
 
 &#160; &#160; &#160; &#160;接下来创建一个`checkValidationLayerSupport`函数，用来检查可用的层。
 
