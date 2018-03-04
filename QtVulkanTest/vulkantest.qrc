@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>color_frag.spv</file>
+        <file>color_vert.spv</file>
+        <file>color.frag</file>
+        <file>color.vert</file>
+    </qresource>
+</RCC>
